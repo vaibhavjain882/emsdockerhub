@@ -2,5 +2,4 @@ version: 0.0
 os: linux
 files:
   - source: ./target/*.war
-    destination: /opt/
- 
+    destination: /var/lib/tomcat8/webapps
