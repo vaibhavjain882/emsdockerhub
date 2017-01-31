@@ -1,0 +1,16 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - mvn clean install
+  
+  post_build:
+    commands:
+      - cp target/EmployeeApplication.war EmployeeApplication.war
+      
+
+artifacts:
+  files:
+    - appspec.yml
+    - EmployeeApplication.war
